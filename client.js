@@ -24,6 +24,7 @@ module.exports = function (options) {
   
     render() {
       const { visible, confirmLoading } = this.state;
+      options = options || {};
       return (
         <span>
           <Button type="primary" onClick={this.showModal} className="btn-home">

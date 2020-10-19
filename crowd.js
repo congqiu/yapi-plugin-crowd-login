@@ -1,7 +1,7 @@
 const axios = require('axios');
 const yapi = require('yapi.js');
 
-function AtlassianCrowd(options) {
+function AtlassianCrowd(options = {}) {
   this.settings = {};
 
   this.settings.url = process.env.CROWD_URL || options.url;

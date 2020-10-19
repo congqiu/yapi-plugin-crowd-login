@@ -1,6 +1,6 @@
 {
   "name": "yapi-plugin-crowd-login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于Crowd认证的YAPI登录插件",
   "main": "index.js",
   "scripts": {
