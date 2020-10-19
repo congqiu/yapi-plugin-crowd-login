@@ -6,7 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/congqiu/yapi-plugin-crowd-login"
+  },
+  "bugs": {
+    "url": "https://github.com/congqiu/yapi-plugin-crowd-login/issues"
+  },
+  "homepage": "https://github.com/congqiu/yapi-plugin-crowd-login#readme",
   "keywords": ["YAPI", "login", "yapi-plugin", "Crowd", "Atlassian"],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }

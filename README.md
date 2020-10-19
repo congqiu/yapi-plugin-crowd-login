@@ -7,7 +7,7 @@ yapi-plugin-crowd-login
 
 第一步：在config.json这层目录下运行 ```yapi plugin --name yapi-plugin-crowd-login```安装插件
 
-第二步：配置crowd认证登录config.json
+第二步：配置crowd认证登录config.json，options中的参数都是可选的
 
 ```json
 {
@@ -15,7 +15,7 @@ yapi-plugin-crowd-login
     "options": {
       "url": "https://example.com/crowd",
       "name": "应用name",
-      "loginBtnText": "登录按钮文字" // 可选
+      "loginBtnText": "登录按钮文字"
     }
 }
 ```
