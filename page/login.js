@@ -27,7 +27,6 @@ class Login extends Component {
     form.validateFields(async (err, values) => {
       if (!err) {
         let result = await axios.post('/api/user/login_by_token', values);
-        console.log(result)
         if (result.request.responseURL.indexOf("/group") !== -1) {
           message.success('登录成功! ');
           window.location.reload();
