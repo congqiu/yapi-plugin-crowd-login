@@ -30,7 +30,7 @@ module.exports = function (options) {
             {options.loginBtnText || "Crowd登录"}
           </Button>
           <Modal
-            title="AtlassianCrowd认证登录"
+            title="Atlassian Crowd认证登录"
             maskClosable={false}
             centered={true}
             visible={visible}

@@ -41,7 +41,7 @@ export CROWD_NAME=...
 
 ### 更新
 
-通过yapi-cli更新插件还是比较麻烦的，直接再执行一次命令并不会更新。因为yapi-cli安装插件实际上就是在vendors目录下执行`npm install  --registry https://registry.npm.taobao.org yapi-plugin-crowd-login`，所以最后会在package.json文件中记录下开始安装的版本号，再次执行安装的还是同一个版本。
+通过yapi-cli更新插件还是比较麻烦的，直接再执行一次命令并不会更新。因为yapi-cli安装插件实际上就是在vendors目录下执行`npm install --registry https://registry.npm.taobao.org yapi-plugin-crowd-login`，所以最后会在package.json文件中记录下开始安装的版本号，再次执行安装的还是同一个版本。
 
 执行如下操作可以进行更新：
 1. 需要先清除ykit的缓存，删除`./vendors/node_modules/.ykit_cache`文件夹
