@@ -1,12 +1,12 @@
 {
   "name": "yapi-plugin-crowd-login",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于Crowd认证的YAPI登录插件",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["YAPI", "login", "yapi-plugin", "Crowd", "Atlassian"],
   "author": "",
   "license": "ISC"
 }

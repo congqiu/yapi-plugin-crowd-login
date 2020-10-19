@@ -1,18 +1,22 @@
 const axios = require('axios');
+const yapi = require('yapi.js');
 
 function AtlassianCrowd(options) {
-  this.settings = options || {};
+  this.settings = {};
 
+  this.settings.url = process.env.CROWD_URL || options.url;
   if(!this.settings.url) {
-    throw new Error("请输入Crowd的URL");
+    yapi.commons.log("请输入Crowd的URL", 'error');
   }
 
+  this.settings.name = process.env.CROWD_NAME || options.name;
   if(this.settings.name === undefined) {
-    throw new Error("请输入认证应用的name");
+    yapi.commons.log("请输入认证应用的name", 'error');
   }
 
+  this.settings.password = process.env.CROWD_PASSWORD;
   if(this.settings.password === undefined) {
-    throw new Error("请输入认证应用的password");
+    yapi.commons.log("请输入认证应用的password", 'error');
   }
 
   this.authentication = async function (username, password) {

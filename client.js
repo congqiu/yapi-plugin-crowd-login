@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Button, Modal} from 'antd';
-import Login from "./login";
+import Login from "./page/login";
 
-module.exports = function () {
+module.exports = function (options) {
   class CrowdLogin extends Component {
 
     state = {
@@ -27,10 +27,12 @@ module.exports = function () {
       return (
         <span>
           <Button type="primary" onClick={this.showModal} className="btn-home">
-            Crowd登录
+            {options.loginBtnText || "Crowd登录"}
           </Button>
           <Modal
             title="AtlassianCrowd认证登录"
+            maskClosable={false}
+            centered={true}
             visible={visible}
             onOk={this.handleOk}
             confirmLoading={confirmLoading}
